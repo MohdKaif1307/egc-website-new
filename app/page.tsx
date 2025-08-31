@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
     <>
@@ -128,7 +126,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Eat Right India Initiative</h3>
               <p className="text-gray-600 mb-6">
-                Supporting India's vision for safe, healthy, and sustainable food practices.
+                Supporting India&apos;s vision for safe, healthy, and sustainable food practices.
               </p>
               <a href="/projects/eat-right-india" className="text-green-600 hover:text-green-700 font-semibold">
                 Learn More →
@@ -272,7 +270,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-600 italic">
-                "EGC World made our compliance journey smooth and stress-free. Excellent guidance throughout."
+                &ldquo;EGC World made our compliance journey smooth and stress-free. Excellent guidance throughout.&rdquo;
               </p>
             </div>
 
@@ -289,7 +287,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-600 italic">
-                "They supported us with compliance and brand promotion — a one-stop solution!"
+                &ldquo;They supported us with compliance and brand promotion — a one-stop solution!&rdquo;
               </p>
             </div>
           </div>

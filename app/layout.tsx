@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Link from "next/link";
+import Image from "next/image";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -44,18 +46,18 @@ function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
-            <a href="/" className="flex items-center space-x-3">
-              <img src="/images/egc-logo.svg" alt="EGC World Logo" className="h-30 w-auto" />
+            <Link href="/" className="flex items-center space-x-3">
+              <Image src="/images/egc-logo.svg" alt="EGC World Logo" width={200} height={120} className="h-30 w-auto" />
               {/* <div className="hidden sm:block">
                 <h1 className="text-xl font-bold text-primary-800">EGC World</h1>
                 <p className="text-xs text-primary-600">SOCIAL RENAISSANCE</p>
               </div> */}
-            </a>
+            </Link>
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="/" className="text-gray-700 hover:text-black-600 transition-colors text-xl">Home</a>
-            <a href="/about" className="text-gray-700 hover:text-primary-600 transition-colors text-xl">About Us</a>
+            <Link href="/" className="text-gray-700 hover:text-black-600 transition-colors text-xl">Home</Link>
+            <Link href="/about" className="text-gray-700 hover:text-primary-600 transition-colors text-xl">About Us</Link>
             
             {/* Services Dropdown */}
             <div className="relative group">
@@ -67,21 +69,21 @@ function Header() {
               </button>
               <div className="absolute top-full left-0 mt-2 w-64 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                 <div className="py-2">
-                  <a href="/services/consulting" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary-600 transition-colors">
+                  <Link href="/services/consulting" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary-600 transition-colors">
                     Business & Management Consulting
-                  </a>
-                  <a href="/services/training" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary-600 transition-colors">
+                  </Link>
+                  <Link href="/services/training" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary-600 transition-colors">
                     Learning & Development Programs
-                  </a>
-                  <a href="/services/compliance" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary-600 transition-colors">
+                  </Link>
+                  <Link href="/services/compliance" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary-600 transition-colors">
                     Corporate Compliance Solutions
-                  </a>
-                  <a href="/services/seo" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary-600 transition-colors">
+                  </Link>
+                  <Link href="/services/seo" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary-600 transition-colors">
                     SEO Optimization
-                  </a>
-                  <a href="/services/marketing" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary-600 transition-colors">
+                  </Link>
+                  <Link href="/services/marketing" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary-600 transition-colors">
                     Marketing for Your Brand
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -96,25 +98,25 @@ function Header() {
               </button>
               <div className="absolute top-full left-0 mt-2 w-64 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                 <div className="py-2">
-                  <a href="/projects/eat-right-india" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary-600 transition-colors">
+                  <Link href="/projects/eat-right-india" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary-600 transition-colors">
                     Eat Right India Initiative
-                  </a>
-                  <a href="/projects/legal-metrology" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary-600 transition-colors">
+                  </Link>
+                  <Link href="/projects/legal-metrology" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary-600 transition-colors">
                     Legal Metrology Affairs
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
             
-            <a href="/insights" className="text-gray-700 hover:text-primary-600 transition-colors text-xl">Insights / Blog</a>
+            <Link href="/insights" className="text-gray-700 hover:text-primary-600 transition-colors text-xl">Insights / Blog</Link>
             
             {/* Get in Touch CTA Button */}
-            <a 
+            <Link 
               href="/contact" 
               className="bg-accent-600 hover:bg-primary-700 text-white px-6 py-2 rounded-lg font-semibold transition-colors text-xl"
             >
               Get in Touch
-            </a>
+            </Link>
           </nav>
           
           <div className="md:hidden">
@@ -139,12 +141,12 @@ function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-gray-300">
-              <li><a href="/" className="hover:text-white transition-colors">Home</a></li>
-              <li><a href="/about" className="hover:text-white transition-colors">About Us</a></li>
-              <li><a href="/services" className="hover:text-white transition-colors">Services</a></li>
-              <li><a href="/projects" className="hover:text-white transition-colors">Regulatory Projects</a></li>
-              <li><a href="/insights" className="hover:text-white transition-colors">Insights / Blog</a></li>
-              <li><a href="/contact" className="hover:text-white transition-colors">Contact Us</a></li>
+              <li><Link href="/" className="hover:text-white transition-colors">Home</Link></li>
+              <li><Link href="/about" className="hover:text-white transition-colors">About Us</Link></li>
+              <li><Link href="/services" className="hover:text-white transition-colors">Services</Link></li>
+              <li><Link href="/projects" className="hover:text-white transition-colors">Regulatory Projects</Link></li>
+              <li><Link href="/insights" className="hover:text-white transition-colors">Insights / Blog</Link></li>
+              <li><Link href="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
             </ul>
           </div>
           
@@ -152,11 +154,11 @@ function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Our Services</h4>
             <ul className="space-y-2 text-gray-300">
-              <li><a href="/services/consulting" className="hover:text-white transition-colors">Management Consulting</a></li>
-              <li><a href="/services/training" className="hover:text-white transition-colors">Learning & Development</a></li>
-              <li><a href="/services/compliance" className="hover:text-white transition-colors">Compliance Solutions</a></li>
-              <li><a href="/services/seo" className="hover:text-white transition-colors">SEO Optimization</a></li>
-              <li><a href="/services/marketing" className="hover:text-white transition-colors">Brand Marketing</a></li>
+              <li><Link href="/services/consulting" className="hover:text-white transition-colors">Management Consulting</Link></li>
+              <li><Link href="/services/training" className="hover:text-white transition-colors">Learning & Development</Link></li>
+              <li><Link href="/services/compliance" className="hover:text-white transition-colors">Compliance Solutions</Link></li>
+              <li><Link href="/services/seo" className="hover:text-white transition-colors">SEO Optimization</Link></li>
+              <li><Link href="/services/marketing" className="hover:text-white transition-colors">Brand Marketing</Link></li>
             </ul>
           </div>
           
@@ -183,8 +185,8 @@ function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Legal & Social</h4>
             <ul className="space-y-2 text-gray-300 mb-4">
-              <li><a href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</a></li>
-              <li><a href="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</a></li>
+              <li><Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
+              <li><Link href="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link></li>
             </ul>
             
             {/* Social Media Icons */}

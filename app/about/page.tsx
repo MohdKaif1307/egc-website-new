@@ -197,7 +197,7 @@ export default function About() {
             Ready to Work With Us?
           </h2>
           <p className="text-xl mb-8 text-blue-100 max-w-3xl mx-auto">
-            Let's discuss how we can help you achieve your business goals and navigate the path to success.
+            Let&apos;s discuss how we can help you achieve your business goals and navigate the path to success.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
