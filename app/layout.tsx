@@ -47,7 +47,7 @@ function Header() {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-3">
-              <Image src="/images/egc-logo.svg" alt="EGC World Logo" width={200} height={120} className="h-30 w-auto" />
+              <Image src="/images/egc-logo.svg" alt="EGC World Logo" width={100} height={100} className="h-30 w-auto" />
               {/* <div className="hidden sm:block">
                 <h1 className="text-xl font-bold text-primary-800">EGC World</h1>
                 <p className="text-xs text-primary-600">SOCIAL RENAISSANCE</p>
