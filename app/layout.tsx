@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
-import Image from "next/image";
 import "./globals.css";
+import Header from "./components/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -40,97 +40,7 @@ export default function RootLayout({
   );
 }
 
-function Header() {
-  return (
-    <header className="bg-white shadow-lg sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
-          <div className="flex items-center">
-            <Link href="/" className="flex items-center space-x-3">
-              <Image src="/images/egc-logo.svg" alt="EGC World Logo" width={100} height={100} className="h-20 w-auto" />
-              {/* <div className="hidden sm:block">
-                <h1 className="text-xl font-bold text-primary-800">EGC World</h1>
-                <p className="text-xs text-primary-600">SOCIAL RENAISSANCE</p>
-              </div> */}
-            </Link>
-          </div>
-          
-          <nav className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-gray-700 hover:text-black-600 transition-colors text-xl">Home</Link>
-            <Link href="/about" className="text-gray-700 hover:text-primary-600 transition-colors text-xl">About Us</Link>
-            
-            {/* Services Dropdown */}
-            <div className="relative group">
-              <button className="text-gray-700 hover:text-primary-600 transition-colors flex items-center text-xl">
-                Services
-                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              <div className="absolute top-full left-0 mt-2 w-64 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                <div className="py-2">
-                  <Link href="/services/consulting" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary-600 transition-colors">
-                    Business & Management Consulting
-                  </Link>
-                  <Link href="/services/training" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary-600 transition-colors">
-                    Learning & Development Programs
-                  </Link>
-                  <Link href="/services/compliance" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary-600 transition-colors">
-                    Corporate Compliance Solutions
-                  </Link>
-                  <Link href="/services/seo" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary-600 transition-colors">
-                    SEO Optimization
-                  </Link>
-                  <Link href="/services/marketing" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary-600 transition-colors">
-                    Marketing for Your Brand
-                  </Link>
-                </div>
-              </div>
-            </div>
-            
-            {/* Regulatory Projects Dropdown */}
-            <div className="relative group">
-              <button className="text-gray-700 hover:text-primary-600 transition-colors flex items-center text-xl">
-                Regulatory Projects
-                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              <div className="absolute top-full left-0 mt-2 w-64 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                <div className="py-2">
-                  <Link href="/projects/eat-right-india" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary-600 transition-colors">
-                    Eat Right India Initiative
-                  </Link>
-                  <Link href="/projects/legal-metrology" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary-600 transition-colors">
-                    Legal Metrology Affairs
-                  </Link>
-                </div>
-              </div>
-            </div>
-            
-            <Link href="/insights" className="text-gray-700 hover:text-primary-600 transition-colors text-xl">Insights / Blog</Link>
-            
-            {/* Get in Touch CTA Button */}
-            <Link 
-              href="/contact" 
-              className="bg-accent-600 hover:bg-primary-700 text-white px-6 py-2 rounded-lg font-semibold transition-colors text-xl"
-            >
-              Get in Touch
-            </Link>
-          </nav>
-          
-          <div className="md:hidden">
-            <button className="text-gray-700">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </header>
-  );
-}
+
 
 function Footer() {
   return (
