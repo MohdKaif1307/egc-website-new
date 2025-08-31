@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="insightsGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#insightsGradient)"/>
+  <polygon points="50,50 70,30 90,50 70,70" fill="rgba(255,255,255,0.3)"/>
+  <polygon points="150,80 170,60 190,80 170,100" fill="rgba(255,255,255,0.4)"/>
+  <polygon points="250,110 270,90 290,110 270,130" fill="rgba(255,255,255,0.2)"/>
+  <polygon points="350,140 370,120 390,140 370,160" fill="rgba(255,255,255,0.3)"/>
+  <polygon points="450,170 470,150 490,170 470,190" fill="rgba(255,255,255,0.4)"/>
+  <polygon points="550,200 570,180 590,200 570,220" fill="rgba(255,255,255,0.2)"/>
+  <polygon points="650,230 670,210 690,230 670,250" fill="rgba(255,255,255,0.3)"/>
+  <polygon points="750,260 770,240 790,260 770,280" fill="rgba(255,255,255,0.4)"/>
+  <polygon points="850,290 870,270 890,290 870,310" fill="rgba(255,255,255,0.2)"/>
+  <polygon points="950,320 970,300 990,320 970,340" fill="rgba(255,255,255,0.3)"/>
+  <polygon points="1050,350 1070,330 1090,350 1070,370" fill="rgba(255,255,255,0.4)"/>
+  <polygon points="1150,380 1170,360 1190,380 1170,400" fill="rgba(255,255,255,0.2)"/>
+</svg>
