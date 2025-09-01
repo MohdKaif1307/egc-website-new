@@ -15,7 +15,7 @@ export default function InsightsPage() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
           style={{
-            backgroundImage: "url('/images/hero-insights.svg')",
+            backgroundImage: "url('/images/insights-knowledge-bg.jpg')",
           }}
         ></div>
         <div className="hero-content max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

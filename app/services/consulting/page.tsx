@@ -1,17 +1,19 @@
+import Image from "next/image";
+
 export default function ConsultingService() {
   return (
     <>
             {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-blue-900 via-blue-800 to-blue-700 text-white py-20 overflow-hidden">
         {/* Background Image */}
-        <div className="absolute inset-0 bg-black/40 z-0"></div>
-                <div
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
           style={{
-            backgroundImage: "url('/images/hero-consulting.svg')",
+            backgroundImage: "url('/images/consulting-services-bg.jpg')",
           }}
         ></div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="absolute inset-0 bg-black/60 z-10"></div>
+        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -54,13 +56,14 @@ export default function ConsultingService() {
                 Whether you're a startup looking to scale, an SME seeking operational efficiency, or a large corporation aiming for transformation, our expert consultants work closely with your team to deliver measurable results.
               </p>
             </div>
-            <div className="bg-gray-200 rounded-xl h-96 flex items-center justify-center">
-              <div className="text-center text-gray-500">
-                <svg className="w-24 h-24 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                </svg>
-                <p>Business Strategy Image</p>
-              </div>
+            <div className="rounded-xl h-96 overflow-hidden">
+              <Image 
+                src="/images/team-collaboration.jpg" 
+                alt="Business strategy consulting and team collaboration" 
+                width={600}
+                height={400}
+                className="w-full h-full object-cover rounded-xl"
+              />
             </div>
           </div>
         </div>

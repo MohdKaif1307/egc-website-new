@@ -11,14 +11,14 @@ export default function LegalMetrologyGuide() {
       {/* Hero Section */}
       <section className="relative hero-gradient text-white py-20 overflow-hidden">
         {/* Background Image */}
-        <div className="hero-overlay"></div>
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
           style={{
-            backgroundImage: "url('/images/hero-insights.svg')",
+            backgroundImage: "url('/images/legal-metrology-bg.jpg')",
           }}
         ></div>
-        <div className="hero-content max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="absolute inset-0 bg-black/60 z-10"></div>
+        <div className="hero-content relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Legal Metrology in India: A Complete Guide for Businesses in 2025
@@ -41,7 +41,17 @@ export default function LegalMetrologyGuide() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <article className="blog-content">
-            <div className="bg-gradient-to-r from-white-700 to-primary-400 rounded-xl shadow-lg p-8 md:p-12">
+            <div className="relative bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 md:p-12 overflow-hidden">
+              {/* Company Logo Background */}
+              <div 
+                className="absolute inset-0 opacity-5 bg-center bg-no-repeat bg-contain z-0"
+                style={{
+                  backgroundImage: "url('/images/egc-logo.svg')",
+                  backgroundSize: "200px 200px",
+                  backgroundPosition: "right bottom"
+                }}
+              ></div>
+              <div className="relative z-10">
               <h2>Introduction</h2>
               <p>
                 Legal Metrology plays a crucial role in ensuring fair trade practices and consumer protection in India. 
@@ -201,6 +211,7 @@ export default function LegalMetrologyGuide() {
                   Contact Us Today
                 </a>
               </div>
+              </div> {/* End of relative z-10 div */}
             </div>
           </article>
         </div>

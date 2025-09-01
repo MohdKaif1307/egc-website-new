@@ -1,14 +1,16 @@
+import Image from "next/image";
+
 export default function EatRightIndiaProject() {
   return (
     <>
             {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-green-900 via-green-800 to-green-700 text-white py-20 overflow-hidden">
         {/* Background Image */}
-        <div className="absolute inset-0 bg-black/40 z-0"></div>
+        <div className="absolute inset-0 bg-black/60 z-10"></div>
                 <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
           style={{
-            backgroundImage: "url('/images/hero-eat-right.svg')",
+            backgroundImage: "url('/images/eat-right-india-bg.jpg')",
           }}
         ></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -16,7 +18,7 @@ export default function EatRightIndiaProject() {
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Eat Right India Initiative
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-green-100 max-w-4xl mx-auto">
+            <p className="text-xl md:text-2xl mb-8 text-white-100 max-w-4xl mx-auto">
               Supporting FSSAI's mission to ensure safe, healthy, and sustainable food for all citizens through comprehensive implementation and awareness programs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -52,13 +54,14 @@ export default function EatRightIndiaProject() {
                 This initiative aims to create a culture of safe and healthy eating habits, reduce foodborne illnesses, and promote sustainable food practices across the country. EGC World is proud to be a key implementation partner in this transformative initiative.
               </p>
             </div>
-            <div className="bg-gray-200 rounded-xl h-96 flex items-center justify-center">
-              <div className="text-center text-gray-500">
-                <svg className="w-24 h-24 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                </svg>
-                <p>Eat Right India Initiative Image</p>
-              </div>
+            <div className="rounded-xl h-96 overflow-hidden">
+              <Image 
+                src="/images/business-growth.jpg" 
+                alt="Eat Right India initiative promoting food safety and healthy eating practices" 
+                width={600}
+                height={400}
+                className="w-full h-full object-cover rounded-xl"
+              />
             </div>
           </div>
         </div>
@@ -288,12 +291,12 @@ export default function EatRightIndiaProject() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-r from-primary-500 to-white-400 text-white py-20">
+      <section className="bg-gradient-to-r from-primary-500 to-white-400 text-black py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Join the Eat Right India Movement
           </h2>
-          <p className="text-xl mb-8 text-green-100 max-w-3xl mx-auto">
+          <p className="text-xl mb-8 text-black-100 max-w-3xl mx-auto">
             Partner with us to contribute to building a healthier, safer, and more sustainable food ecosystem for India.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

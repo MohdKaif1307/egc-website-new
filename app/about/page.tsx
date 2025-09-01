@@ -1,17 +1,19 @@
+import Image from "next/image";
+
 export default function About() {
   return (
     <>
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-blue-900 via-blue-800 to-blue-700 text-white py-20 overflow-hidden">
         {/* Background Image */}
-        <div className="absolute inset-0 bg-black/40 z-0"></div>
-                <div
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
           style={{
-            backgroundImage: "url('/images/hero-about.svg')",
+            backgroundImage: "url('/images/about-us-bg.jpg')",
           }}
         ></div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="absolute inset-0 bg-black/60 z-10"></div>
+        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               About EGC World
@@ -27,10 +29,10 @@ export default function About() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-white-900 mb-6 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-6 text-center">
               Our Story
             </h2>
-            <div className="prose prose-lg mx-auto text-white-600">
+            <div className="prose prose-lg mx-auto text-gray-600 dark:text-gray-300">
               <p className="text-xl leading-relaxed mb-6">
                 At <strong>Emmanuel Global Consultancies (EGC World)</strong>, we believe that every business deserves a partner who can simplify compliance and fuel growth. Founded over 10 years ago, we started with a single mission: <strong>to help businesses navigate complex regulations and thrive in competitive markets.</strong>
               </p>
@@ -120,27 +122,27 @@ export default function About() {
       <section className="py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-white-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">
               Our Achievements
             </h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-6xl font-bold text-white-600 mb-2">10+</div>
-              <div className="text-white-300">Years of Experience</div>
+              <div className="text-6xl font-bold text-gray-600 dark:text-gray-300 mb-2">10+</div>
+              <div className="text-gray-500 dark:text-gray-400">Years of Experience</div>
             </div>
             <div className="text-center">
-              <div className="text-6xl font-bold text-white-600 mb-2">1000+</div>
-              <div className="text-white-300">Projects Delivered</div>
+              <div className="text-6xl font-bold text-gray-600 dark:text-gray-300 mb-2">1000+</div>
+              <div className="text-gray-500 dark:text-gray-400">Projects Delivered</div>
             </div>
             <div className="text-center">
-              <div className="text-6xl font-bold text-white-600 mb-2">500+</div>
-              <div className="text-white-300">Happy Clients</div>
+              <div className="text-6xl font-bold text-gray-600 dark:text-gray-300 mb-2">500+</div>
+              <div className="text-gray-500 dark:text-gray-400">Happy Clients</div>
             </div>
             <div className="text-center">
-              <div className="text-6xl font-bold text-white-600 mb-2">50+</div>
-              <div className="text-white-300">Expert Consultants</div>
+              <div className="text-6xl font-bold text-gray-600 dark:text-gray-300 mb-2">50+</div>
+              <div className="text-gray-500 dark:text-gray-400">Expert Consultants</div>
             </div>
           </div>
         </div>
@@ -160,29 +162,37 @@ export default function About() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             {/* Team Member 1 */}
-            <div className="bg-white rounded-xl shadow-lg p-6 text-center">
-              <div className="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <svg className="w-16 h-16 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg>
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 text-center">
+              <div className="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden">
+                <Image 
+                  src="/images/Mr. Elisha Johnson.jpg" 
+                  alt="Mr. Elisha Johnson - Founder & Director"
+                  width={128}
+                  height={128}
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <h4 className="text-xl font-semibold text-gray-900 mb-2">Mr. Elisha Johnson</h4>
-              <p className="text-blue-600 mb-2">Founder & Director</p>
-              <p className="text-gray-600 text-sm">
+              <h4 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">Mr. Elisha Johnson</h4>
+              <p className="text-blue-600 dark:text-blue-400 mb-2">Founder & Director</p>
+              <p className="text-gray-600 dark:text-gray-300 text-sm">
                 Over 15 years of experience in business consulting and regulatory compliance.
               </p>
             </div>
 
             {/* Team Member 2 */}
-            <div className="bg-white rounded-xl shadow-lg p-6 text-center">
-              <div className="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <svg className="w-16 h-16 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg>
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 text-center">
+              <div className="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden">
+                <Image 
+                  src="/images/Mrs. Megha H. Johnson.png" 
+                  alt="Mrs. Megha H. Johnson - Managing Director"
+                  width={128}
+                  height={128}
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <h4 className="text-xl font-semibold text-gray-900 mb-2">Mrs. Megha H. Johnson</h4>
-              <p className="text-blue-600 mb-2">Managing Director</p>
-              <p className="text-gray-600 text-sm">
+              <h4 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">Mrs. Megha H. Johnson</h4>
+              <p className="text-blue-600 dark:text-blue-400 mb-2">Managing Director</p>
+              <p className="text-gray-600 dark:text-gray-300 text-sm">
                 Expert in process optimization and team development with 12+ years of experience.
               </p>
             </div>

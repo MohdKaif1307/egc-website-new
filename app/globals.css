@@ -58,6 +58,18 @@
   :root {
     --background: #0f172a;
     --foreground: #f8fafc;
+    
+    /* Dark mode color adjustments for primary colors */
+    --color-primary-50: #1e293b;
+    --color-primary-100: #334155;
+    --color-primary-200: #475569;
+    --color-primary-300: #64748b;
+    --color-primary-400: #94a3b8;
+    --color-primary-500: #cbd5e1;
+    --color-primary-600: #e2e8f0;
+    --color-primary-700: #f1f5f9;
+    --color-primary-800: #f8fafc;
+    --color-primary-900: #ffffff;
   }
 }
 
@@ -95,27 +107,27 @@ body {
 
 /* Professional Blog Content Styling */
 .blog-content {
-  @apply text-gray-800 leading-relaxed;
+  @apply text-gray-800 dark:text-gray-200 leading-relaxed;
 }
 
 .blog-content h1 {
-  @apply text-4xl font-bold text-gray-900 mb-6 mt-8;
+  @apply text-4xl font-bold text-gray-900 dark:text-gray-100 mb-6 mt-8;
 }
 
 .blog-content h2 {
-  @apply text-3xl font-bold text-gray-900 mb-4 mt-8;
+  @apply text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4 mt-8;
 }
 
 .blog-content h3 {
-  @apply text-2xl font-semibold text-gray-900 mb-3 mt-6;
+  @apply text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-3 mt-6;
 }
 
 .blog-content h4 {
-  @apply text-xl font-semibold text-gray-900 mb-2 mt-4;
+  @apply text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2 mt-4;
 }
 
 .blog-content p {
-  @apply text-lg text-gray-700 mb-4 leading-7;
+  @apply text-lg text-gray-700 dark:text-gray-300 mb-4 leading-7;
 }
 
 .blog-content ul {
@@ -127,35 +139,35 @@ body {
 }
 
 .blog-content li {
-  @apply text-lg text-gray-700 leading-7;
+  @apply text-lg text-gray-700 dark:text-gray-300 leading-7;
 }
 
 .blog-content blockquote {
-  @apply border-l-4 border-primary-500 pl-6 py-4 my-6 bg-primary-50 rounded-r-lg;
+  @apply border-l-4 border-primary-500 pl-6 py-4 my-6 bg-primary-50 dark:bg-primary-900 rounded-r-lg;
 }
 
 .blog-content blockquote p {
-  @apply text-lg text-gray-700 italic mb-0;
+  @apply text-lg text-gray-700 dark:text-gray-300 italic mb-0;
 }
 
 .blog-content a {
-  @apply text-primary-600 hover:text-primary-700 underline;
+  @apply text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 underline;
 }
 
 .blog-content strong {
-  @apply font-semibold text-gray-900;
+  @apply font-semibold text-gray-900 dark:text-gray-100;
 }
 
 .blog-content em {
-  @apply italic text-gray-700;
+  @apply italic text-gray-700 dark:text-gray-300;
 }
 
 .blog-content code {
-  @apply bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm font-mono;
+  @apply bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 px-2 py-1 rounded text-sm font-mono;
 }
 
 .blog-content pre {
-  @apply bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-4;
+  @apply bg-gray-900 dark:bg-gray-800 text-gray-100 p-4 rounded-lg overflow-x-auto mb-4;
 }
 
 .blog-content pre code {
@@ -163,19 +175,19 @@ body {
 }
 
 .blog-content table {
-  @apply w-full border-collapse border border-gray-300 mb-4;
+  @apply w-full border-collapse border border-gray-300 dark:border-gray-600 mb-4;
 }
 
 .blog-content th {
-  @apply bg-gray-100 border border-gray-300 px-4 py-2 text-left font-semibold text-gray-900;
+  @apply bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 px-4 py-2 text-left font-semibold text-gray-900 dark:text-gray-100;
 }
 
 .blog-content td {
-  @apply border border-gray-300 px-4 py-2 text-gray-700;
+  @apply border border-gray-300 dark:border-gray-600 px-4 py-2 text-gray-700 dark:text-gray-300;
 }
 
 .blog-content hr {
-  @apply border-gray-300 my-8;
+  @apply border-gray-300 dark:border-gray-600 my-8;
 }
 
 /* Professional color scheme for components */
@@ -188,23 +200,23 @@ body {
 }
 
 .section-bg-light {
-  @apply bg-gray-50;
+  @apply bg-gray-50 dark:bg-gray-900;
 }
 
 .section-bg-white {
-  @apply bg-white;
+  @apply bg-white dark:bg-gray-800;
 }
 
 .text-heading {
-  @apply text-gray-900;
+  @apply text-gray-900 dark:text-gray-100;
 }
 
 .text-body {
-  @apply text-gray-700;
+  @apply text-gray-700 dark:text-gray-300;
 }
 
 .text-muted {
-  @apply text-gray-500;
+  @apply text-gray-500 dark:text-gray-400;
 }
 
 /* Hero section content visibility */

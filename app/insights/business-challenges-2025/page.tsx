@@ -11,14 +11,14 @@ export default function BusinessChallenges2025() {
       {/* Hero Section */}
       <section className="relative hero-gradient text-white py-20 overflow-hidden">
         {/* Background Image */}
-        <div className="hero-overlay"></div>
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
           style={{
-            backgroundImage: "url('/images/hero-consulting.svg')",
+            backgroundImage: "url('/images/consulting-services-bg.jpg')",
           }}
         ></div>
-        <div className="hero-content max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="absolute inset-0 bg-black/60 z-10"></div>
+        <div className="hero-content relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Top 5 Business Challenges in 2025 and How Consulting Can Solve Them
@@ -41,7 +41,17 @@ export default function BusinessChallenges2025() {
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <article className="blog-content">
-            <div className="bg-white rounded-xl shadow-lg p-8 md:p-12">
+            <div className="relative bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 md:p-12 overflow-hidden">
+              {/* Company Logo Background */}
+              <div 
+                className="absolute inset-0 opacity-5 bg-center bg-no-repeat bg-contain z-0"
+                style={{
+                  backgroundImage: "url('/images/egc-logo.svg')",
+                  backgroundSize: "200px 200px",
+                  backgroundPosition: "right bottom"
+                }}
+              ></div>
+              <div className="relative z-10">
               <h2>Introduction</h2>
               <p>
                 As we move into 2025, businesses face an increasingly complex and rapidly evolving landscape. 
@@ -269,6 +279,7 @@ export default function BusinessChallenges2025() {
                   Start Your Transformation
                 </a>
               </div>
+              </div> {/* End of relative z-10 div */}
             </div>
           </article>
         </div>

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function LegalMetrologyProject() {
   return (
     <>
@@ -8,7 +10,7 @@ export default function LegalMetrologyProject() {
                 <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
           style={{
-            backgroundImage: "url('/images/hero-metrology.svg')",
+            backgroundImage: "url('/images/legal-metrology-bg.jpg')",
           }}
         ></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -52,13 +54,14 @@ export default function LegalMetrologyProject() {
                 EGC World provides comprehensive support to businesses in navigating complex legal metrology requirements, ensuring accurate measurements, proper packaging, and full regulatory compliance across various industries.
               </p>
             </div>
-            <div className="bg-gray-200 rounded-xl h-96 flex items-center justify-center">
-              <div className="text-center text-gray-500">
-                <svg className="w-24 h-24 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                </svg>
-                <p>Legal Metrology Image</p>
-              </div>
+            <div className="rounded-xl h-96 overflow-hidden">
+              <Image 
+                src="/images/legal-metrology-blog.jpg" 
+                alt="Legal metrology compliance and regulatory standards for business operations" 
+                width={600}
+                height={400}
+                className="w-full h-full object-cover rounded-xl"
+              />
             </div>
           </div>
         </div>
@@ -268,7 +271,7 @@ export default function LegalMetrologyProject() {
         </div>
       </section>
 
-      {/* Impact & Results */}
+      {/* Impact & Results
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -299,15 +302,15 @@ export default function LegalMetrologyProject() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-r from-primary-600 text-white py-20">
+      <section className="bg-gradient-to-r from-primary-600 text-black py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ensure Legal Metrology Compliance
           </h2>
-          <p className="text-xl mb-8 text-blue-100 max-w-3xl mx-auto">
+          <p className="text-xl mb-8 text-black-100 max-w-3xl mx-auto">
             Partner with us to navigate legal metrology requirements and ensure your business operates with accuracy, transparency, and full regulatory compliance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

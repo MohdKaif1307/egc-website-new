@@ -1,17 +1,19 @@
+import Image from "next/image";
+
 export default function MarketingService() {
   return (
     <>
             {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-pink-900 via-pink-800 to-pink-700 text-white py-20 overflow-hidden">
         {/* Background Image */}
-        <div className="absolute inset-0 bg-black/40 z-0"></div>
-                <div
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
           style={{
-            backgroundImage: "url('/images/hero-marketing.svg')",
+            backgroundImage: "url('/images/marketing-strategy-bg.jpg')",
           }}
         ></div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="absolute inset-0 bg-black/60 z-10"></div>
+        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -54,13 +56,14 @@ export default function MarketingService() {
                 From digital marketing campaigns to brand strategy development, we create integrated marketing solutions that align with your business objectives and deliver measurable results.
               </p>
             </div>
-            <div className="bg-gray-200 rounded-xl h-96 flex items-center justify-center">
-              <div className="text-center text-gray-500">
-                <svg className="w-24 h-24 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2m-9 0h10m-10 0a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V6a2 2 0 00-2-2" />
-                </svg>
-                <p>Marketing Strategy Image</p>
-              </div>
+            <div className="rounded-xl h-96 overflow-hidden">
+              <Image 
+                src="/images/business-growth.jpg" 
+                alt="Marketing strategy and business growth through digital marketing campaigns" 
+                width={600}
+                height={400}
+                className="w-full h-full object-cover rounded-xl"
+              />
             </div>
           </div>
         </div>

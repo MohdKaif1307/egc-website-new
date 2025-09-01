@@ -1,17 +1,19 @@
+import Image from "next/image";
+
 export default function ComplianceService() {
   return (
     <>
             {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-purple-900 via-purple-800 to-purple-700 text-white py-20 overflow-hidden">
         {/* Background Image */}
-        <div className="absolute inset-0 bg-black/40 z-0"></div>
-                <div
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
           style={{
-            backgroundImage: "url('/images/hero-compliance.svg')",
+            backgroundImage: "url('/images/compliance-bg.jpg')",
           }}
         ></div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="absolute inset-0 bg-black/60 z-10"></div>
+        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -54,13 +56,14 @@ export default function ComplianceService() {
                 From regulatory audits to policy development, our expert team ensures your business operates within legal frameworks while optimizing processes for maximum efficiency and risk mitigation.
               </p>
             </div>
-            <div className="bg-gray-200 rounded-xl h-96 flex items-center justify-center">
-              <div className="text-center text-gray-500">
-                <svg className="w-24 h-24 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                </svg>
-                <p>Compliance Solutions Image</p>
-              </div>
+            <div className="rounded-xl h-96 overflow-hidden">
+              <Image 
+                src="/images/office-meeting.jpg" 
+                alt="Compliance documentation and regulatory consulting services" 
+                width={600}
+                height={400}
+                className="w-full h-full object-cover rounded-xl"
+              />
             </div>
           </div>
         </div>

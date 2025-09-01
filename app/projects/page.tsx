@@ -8,7 +8,7 @@ export default function Projects() {
                 <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
           style={{
-            backgroundImage: "url('/images/hero-projects.svg')",
+            backgroundImage: "url('/images/projects-main-bg.jpg')",
           }}
         ></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
